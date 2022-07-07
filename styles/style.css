@@ -63,6 +63,10 @@ body {
 
 }
 
+.image:hover {
+    cursor: default;
+}
+
 /* =================================== */
 
 .content-div {
@@ -116,6 +120,10 @@ body {
     max-width: 3.25rem;
     max-height: 3.25rem;
 
+}
+
+.music-icon:hover {
+    cursor: default;
 }
 
 /* ================================= */
