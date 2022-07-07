@@ -24,29 +24,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 100vh;
-    padding-inline: 1em;
+    padding-inline: 1rem;
     background: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-color: var(--Pale-blue);
+    margin: 0;
+    /* padding-bottom: 2rem; */
 }
 
 /* =================================== */
 
 .container {
-    min-height: 100vh;
-    max-width: 28.125em;
+    max-width: 28.125rem;
     background-color: white;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 0;
-    border-radius: 1.25em;
+    border-radius: 1.25rem;
+    margin: 5% auto;
 }
 
 /* ================================ */
 .image-div {
-    max-height: 13.75em;
+    max-height: 13.75rem;
     padding: 0;
 
 }
@@ -54,9 +57,9 @@ body {
 
 .image {
     max-width: 100%;
-    max-height: 100%;
-    border-top-left-radius: 1.25em;
-    border-top-right-radius: 1.25em;
+    max-height: 30rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 
 }
 
@@ -66,27 +69,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 2.8125rem;
-    min-height: 30em;
+    padding: 3.125rem;
+    height: 30rem;
     max-height: 100%;
+}
+
+.cont {
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 /* ================================ */
 .content-div h1 {
     font-weight: 900;
-    font-size: 1.75em;
-    margin: 0;
+    font-size: 1.375rem;
     color: var(--Dark-blue);
 }
 
 /* ================================ */
 .summary {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     font-weight: 500;
-    margin: 0;
     color: var(--Desaturated-blue);
+    margin-bottom: 1.25rem;
 }
 
 /* =================================== */
@@ -96,16 +102,20 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1em;
+    height: 6.25rem;
+    padding: 1.25rem;
     background-color: var(--Very-pale-blue);
-    border-radius: 0.8125em;
+    border-radius: 0.8125rem;
+    /* margin: 0; */
 
 }
 
 /* ================================== */
 
 .music-icon {
-    max-width: 3.125em;
+    max-width: 3.25rem;
+    max-height: 3.25rem;
+
 }
 
 /* ================================= */
@@ -114,6 +124,7 @@ body {
     display: flex;
     /* width: 50%; */
     font-family: var(--font);
+    align-items: center;
 }
 
 /* ================================= */
@@ -121,15 +132,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 1.5em;
-
+    margin-left: 1.5rem;
+    height: 50px;
 }
 
 /* =================================== */
 .period {
     font-weight: 700;
-    font-size: 1em;
-    flex: 1;
+    font-size: 1rem;
+    margin: 0;
     color: var(--Dark-blue);
     white-space: nowrap;
     overflow: hidden;
@@ -138,10 +149,9 @@ body {
 /* ================================ */
 .price {
     font-weight: 500;
-    font-size: 1em;
-    margin-bottom: 0;
-    margin-top: auto;
+    font-size: 1rem;
     color: var(--Desaturated-blue);
+    margin: 0;
 }
 
 /* =============================== */
@@ -149,7 +159,7 @@ body {
     text-decoration: underline;
     color: var(--Bright-blue);
     font-weight: 700;
-    font-size: 0.875em;
+    font-size: 0.875rem;
 }
 
 .pricing .right:hover {
@@ -166,10 +176,13 @@ body {
     overflow: hidden;
     width: 100%;
     color: white;
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
+    padding: 15px;
+    font-weight: 700;
     background-color: var(--Bright-blue);
-    font-size: 1em;
+    font-size: 0.875rem;
     box-shadow: 0 10px 15px hsla(245, 75%, 52%, 0.2);
+
 
 }
 
@@ -179,18 +192,13 @@ body {
 
 }
 
-.proceed p {
-    text-align: center;
-    font-size: 0.9375em;
-    font-weight: 700;
-}
-
 /* ============================== */
 
 .cancel {
-    font-size: 0.9375em;
+    font-size: 0.9375rem;
     font-weight: 700;
     color: var(--Desaturated-blue);
+    text-decoration: none;
 }
 
 .cancel:hover {
@@ -204,6 +212,8 @@ body {
     text-align: center;
     font-weight: 700;
     color: var(--Desaturated-blue);
+    width: 100%;
+    height: 1rem;
 }
 
 .attribution a {
@@ -211,18 +221,46 @@ body {
     text-decoration: none;
 }
 
+
 /* ======================================== */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 376px) {
     body {
         background-image: url("../images/pattern-background-mobile.svg");
     }
 
     .content-div {
-        padding: 1.5625em;
+        padding: 2rem;
+        max-height: 25.625rem;
+        max-width: 100%;
     }
 
     .amount {
-        margin-left: 1em;
+        margin-left: 1rem;
+    }
 
+    h1 {
+        margin-bottom: 1.25rem;
+        margin-top: 0;
+    }
+
+    .proceed {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .cont {
+        margin-bottom: 1.25rem;
+    }
+
+    .image-div {
+        max-height: 10rem;
+        max-width: 100%;
+        padding: 0;
+
+    }
+
+    .image {
+        max-height: 10rem;
+        min-width: 100%;
     }
 }
