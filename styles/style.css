@@ -170,6 +170,10 @@ body {
     font-size: 0.875rem;
 }
 
+.pricing .right:visited {
+    text-decoration: none;
+}
+
 .pricing .right:hover {
     text-decoration: none;
     color: hsla(245, 75%, 52%, 0.7);
